@@ -18,9 +18,9 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Ship className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-primary">Sea Flexi</span>
+          <div className="flex items-center space-x-2 min-w-0 flex-shrink-0">
+            <Ship className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+            <span className="text-lg sm:text-2xl font-bold text-primary truncate">Sea Flexi</span>
           </div>
 
           {/* Desktop Navigation */}
