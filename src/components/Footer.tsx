@@ -78,19 +78,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  123 Maritime Plaza, New York, NY 10001
+                  T03, Common Ground, Level 2, Moulmein Rise Shoppes, 9, Jalan Moulmein, Pulau Tikus, 10350 George Town, Pulau Pinang, Malaysia
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  +1 (555) 123-4567
+                  +6012-420 2065
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  info@seaflexi.com
+                  Jessicalee@seaflexi.com
                 </span>
               </div>
             </div>

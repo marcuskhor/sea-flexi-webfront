@@ -20,23 +20,23 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Global Headquarters",
-      details: ["123 Maritime Plaza", "New York, NY 10001", "United States"]
+      title: "Malaysia Headquarters",
+      details: ["T03, Common Ground, Level 2", "Moulmein Rise Shoppes, 9, Jalan Moulmein", "Pulau Tikus, 10350 George Town, Pulau Pinang, Malaysia"]
     },
     {
       icon: Phone,
       title: "Contact Numbers",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568", "24/7 Emergency: +1 (555) 999-0000"]
+      details: ["+6012-420 2065", "24/7 Emergency: +6012-420 2065"]
     },
     {
       icon: Mail,
       title: "Email Addresses",
-      details: ["info@seaflexi.com", "sales@seaflexi.com", "support@seaflexi.com"]
+      details: ["Jessicalee@seaflexi.com", "info@seaflexi.com"]
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM EST", "Saturday: 9:00 AM - 2:00 PM EST", "24/7 Emergency Support Available"]
+      details: ["Monday - Friday: 9:00 AM - 5:00 PM MYT", "Saturday: 9:00 AM - 1:00 PM MYT", "24/7 Emergency Support Available"]
     }
   ];
 
@@ -119,7 +119,7 @@ const ContactSection = () => {
                   </p>
                   <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
                     <Phone className="h-4 w-4 mr-2" />
-                    Call Now: +1 (555) 999-0000
+                    Call Now: +6012-420 2065
                   </Button>
                 </CardContent>
               </Card>

@@ -45,7 +45,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+60 11112 22211</span>
+              <span>+6012-420 2065</span>
             </div>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Get Quote
@@ -78,7 +78,7 @@ const Header = () => {
               <div className="px-3 py-2 border-t border-border mt-3 pt-3">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
                   <Phone className="h-4 w-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+6012-420 2065</span>
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   Get Quote
