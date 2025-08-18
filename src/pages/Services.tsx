@@ -1,55 +1,31 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Ship, Truck, Package, MapPin, Droplets, ArrowRight, Phone, Mail } from "lucide-react";
+import { Ship, Truck, Package, MapPin, Droplets, ArrowRight, Phone, Mail, CheckCircle, Award, Upload } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Services = () => {
-  const services = [
-    {
-      icon: Truck,
-      title: "Door to Door Service (B2B)",
-      description: "Complete end-to-end logistics solutions tailored for business-to-business operations. We handle your cargo from pickup at origin to final delivery at destination, ensuring seamless supply chain management.",
-      features: ["Complete supply chain management", "B2B focused solutions", "Real-time tracking", "Dedicated account management", "Flexible scheduling", "Insurance coverage"]
-    },
-    {
-      icon: Ship,
-      title: "Ocean Freight",
-      description: "Comprehensive sea freight solutions with FCL and LCL options. Our extensive global network ensures competitive rates and reliable transit times across all major shipping routes worldwide.",
-      features: ["Full Container Load (FCL)", "Less Container Load (LCL)", "Global shipping routes", "Port-to-port delivery", "Competitive pricing", "Transit time optimization"]
-    },
-    {
-      icon: Droplets,
-      title: "Flexibag & Installation",
-      description: "Specialized flexibag solutions for bulk liquid transportation. We provide professional installation services and ensure safe, efficient transport of non-hazardous liquids in standard containers.",
-      features: ["Professional installation", "Bulk liquid transport", "Container optimization", "Safety compliance", "Quality assurance", "Technical support"]
-    },
-    {
-      icon: Package,
-      title: "LCL (Malaysia)",
-      description: "Less than Container Load services specifically designed for Malaysian market. Cost-effective consolidation services for smaller shipments with regular sailing schedules and competitive rates.",
-      features: ["Malaysian market expertise", "Regular sailing schedules", "Cost-effective consolidation", "Local customs knowledge", "Door-to-door delivery", "Competitive rates"]
-    },
-    {
-      icon: MapPin,
-      title: "Crossborder Trucking",
-      description: "Efficient cross-border trucking solutions connecting different countries and regions. We handle customs procedures, documentation, and ensure timely delivery across international borders.",
-      features: ["International border crossings", "Customs clearance", "Documentation handling", "Multi-country permits", "Route optimization", "24/7 tracking"]
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6">
-              Our Services
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroBg} 
+            alt="Sea Flexi Services" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/80"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Our <span className="text-accent">Services</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Comprehensive logistics solutions designed to meet your specific business needs. 
               From door-to-door service to specialized transport, we've got you covered.
             </p>
@@ -57,99 +33,375 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20">
+      {/* Door to Door Service Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            {/* Services Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {services.map((service, index) => (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border">
-                  <CardHeader className="pb-4">
-                    <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors duration-300">
-                      <service.icon className="h-7 w-7 text-primary group-hover:text-accent transition-colors duration-300" />
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                    <Truck className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">Door to Door Service (B2B)</h2>
+                </div>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Complete end-to-end logistics solutions tailored for business-to-business operations. 
+                  We handle your cargo from pickup at origin to final delivery at destination, ensuring 
+                  seamless supply chain management.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Complete supply chain management</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>B2B focused solutions</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Real-time tracking</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Dedicated account management</span>
+                  </div>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Get B2B Quote
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-primary mb-4">Why Choose Our B2B Service?</h3>
+                  <div className="space-y-4">
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <h4 className="font-semibold text-primary mb-2">Flexible Scheduling</h4>
+                      <p className="text-sm text-muted-foreground">Pickup and delivery times that work with your business schedule</p>
                     </div>
-                    <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors duration-300">
-                      {service.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {service.description}
-                    </p>
-                    <ul className="space-y-2 mb-6">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-foreground">
-                          <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300">
-                      Get Quote
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Why Choose Our Services */}
-            <div className="bg-muted/50 rounded-2xl p-8 md:p-12 mb-16">
-              <h2 className="text-3xl font-bold text-primary mb-8 text-center">
-                Why Choose Sea Flexi Services?
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Ship className="h-6 w-6 text-primary" />
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <h4 className="font-semibold text-primary mb-2">Insurance Coverage</h4>
+                      <p className="text-sm text-muted-foreground">Full cargo protection from origin to destination</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <h4 className="font-semibold text-primary mb-2">Custom Solutions</h4>
+                      <p className="text-sm text-muted-foreground">Tailored logistics strategies for your unique needs</p>
+                    </div>
                   </div>
-                  <h3 className="font-semibold text-primary mb-2">Global Network</h3>
-                  <p className="text-sm text-muted-foreground">Extensive worldwide connections for seamless logistics</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Package className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-primary mb-2">Specialized Solutions</h3>
-                  <p className="text-sm text-muted-foreground">Tailored services for unique business requirements</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Truck className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-primary mb-2">Reliable Delivery</h3>
-                  <p className="text-sm text-muted-foreground">On-time delivery with real-time tracking</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-primary mb-2">24/7 Support</h3>
-                  <p className="text-sm text-muted-foreground">Round-the-clock customer service and assistance</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* CTA Section */}
-            <div className="text-center bg-gradient-to-r from-primary to-accent rounded-2xl p-8 md:p-12 text-white">
-              <h3 className="text-3xl font-bold mb-4">
-                Ready to Optimize Your Logistics?
-              </h3>
-              <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Let our experts help you choose the right combination of services 
-                to streamline your supply chain and reduce costs.
+      {/* Ocean Freight Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 lg:order-1">
+                <div className="text-center">
+                  <Ship className="h-16 w-16 text-primary mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-primary mb-4">Global Ocean Network</h3>
+                  <div className="grid grid-cols-2 gap-4 text-center">
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="text-2xl font-bold text-accent">50+</div>
+                      <div className="text-sm text-muted-foreground">Ports Worldwide</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="text-2xl font-bold text-accent">99%</div>
+                      <div className="text-sm text-muted-foreground">On-Time Performance</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="text-2xl font-bold text-accent">24/7</div>
+                      <div className="text-sm text-muted-foreground">Tracking Support</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="text-2xl font-bold text-accent">15+</div>
+                      <div className="text-sm text-muted-foreground">Years Experience</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:order-2">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                    <Ship className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">Ocean Freight</h2>
+                </div>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Comprehensive sea freight solutions with FCL and LCL options. Our extensive global 
+                  network ensures competitive rates and reliable transit times across all major shipping routes worldwide.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Full Container Load (FCL)</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Less Container Load (LCL)</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Global shipping routes</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Port-to-port delivery</span>
+                  </div>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Ocean Freight Quote
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Flexibag Section with Certificate Upload */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                  <Droplets className="h-8 w-8 text-primary" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-bold text-primary">Flexibag & Installation</h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Specialized flexibag solutions for bulk liquid transportation. We provide professional 
+                installation services and ensure safe, efficient transport of non-hazardous liquids in standard containers.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now: +1 (555) 123-4567
-                </Button>
-                <Button size="lg" variant="outline" className="border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary shadow-lg hover:shadow-xl transition-all duration-300">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Email Us
+            </div>
+            
+            <div className="grid lg:grid-cols-3 gap-8">
+              <div className="lg:col-span-2">
+                <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
+                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <h3 className="font-semibold text-primary mb-2">Professional Installation</h3>
+                    <p className="text-sm text-muted-foreground">Expert installation by certified technicians</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
+                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <h3 className="font-semibold text-primary mb-2">Bulk Liquid Transport</h3>
+                    <p className="text-sm text-muted-foreground">Safe transport of various non-hazardous liquids</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
+                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <h3 className="font-semibold text-primary mb-2">Container Optimization</h3>
+                    <p className="text-sm text-muted-foreground">Maximum container utilization and efficiency</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
+                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <h3 className="font-semibold text-primary mb-2">Safety Compliance</h3>
+                    <p className="text-sm text-muted-foreground">Full compliance with international safety standards</p>
+                  </div>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Flexibag Quote
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
+              
+              {/* Certificate Upload Area */}
+              <div className="bg-white border-2 border-dashed border-primary/30 rounded-2xl p-8 text-center">
+                <Award className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-primary mb-4">Our Certification</h3>
+                <div className="bg-muted/50 rounded-lg p-6 mb-4 min-h-[200px] flex items-center justify-center">
+                  <div className="text-center">
+                    <Upload className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
+                    <p className="text-sm text-muted-foreground mb-2">Certificate Image</p>
+                    <p className="text-xs text-muted-foreground">
+                      Upload your flexibag certification here
+                    </p>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full">
+                  <Upload className="mr-2 h-4 w-4" />
+                  Upload Certificate
+                </Button>
+                <p className="text-xs text-muted-foreground mt-2">
+                  Supported formats: JPG, PNG, PDF
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LCL Malaysia Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                    <Package className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">LCL (Malaysia)</h2>
+                </div>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Less than Container Load services specifically designed for Malaysian market. 
+                  Cost-effective consolidation services for smaller shipments with regular sailing schedules and competitive rates.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Malaysian market expertise</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Regular sailing schedules</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Cost-effective consolidation</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Local customs knowledge</span>
+                  </div>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Malaysia LCL Quote
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+              <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-primary mb-6 text-center">Malaysia Advantages</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-accent font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Local Expertise</h4>
+                      <p className="text-sm text-muted-foreground">Deep understanding of Malaysian customs and regulations</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-accent font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Strategic Location</h4>
+                      <p className="text-sm text-muted-foreground">Gateway to Southeast Asia with excellent connectivity</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-accent font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Competitive Rates</h4>
+                      <p className="text-sm text-muted-foreground">Best-in-market pricing for Malaysian routes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Crossborder Trucking Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 lg:order-1">
+                <div className="text-center mb-6">
+                  <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-primary">Cross-Border Network</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 flex items-center">
+                    <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                    <span className="text-sm font-medium">Malaysia ↔ Singapore</span>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 flex items-center">
+                    <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                    <span className="text-sm font-medium">Malaysia ↔ Thailand</span>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 flex items-center">
+                    <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                    <span className="text-sm font-medium">Regional ASEAN Routes</span>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 flex items-center">
+                    <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                    <span className="text-sm font-medium">Custom Route Planning</span>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:order-2">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">Crossborder Trucking</h2>
+                </div>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Efficient cross-border trucking solutions connecting different countries and regions. 
+                  We handle customs procedures, documentation, and ensure timely delivery across international borders.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>International border crossings</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Customs clearance</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Documentation handling</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Route optimization</span>
+                  </div>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Trucking Quote
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              Ready to Optimize Your Logistics?
+            </h2>
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+              Let our experts help you choose the right combination of services 
+              to streamline your supply chain and reduce costs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                <Phone className="mr-2 h-4 w-4" />
+                Call Now: +1 (555) 123-4567
+              </Button>
+              <Button size="lg" variant="outline" className="border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary shadow-lg hover:shadow-xl transition-all duration-300">
+                <Mail className="mr-2 h-4 w-4" />
+                Email Us
+              </Button>
             </div>
           </div>
         </div>
