@@ -103,8 +103,9 @@ const Contact = () => {
                 {offices.map((office) => (
                   <Card key={office.id} className="border-2 hover:border-primary/50 transition-colors">
                     <CardHeader>
-                      <CardTitle className="text-xl text-primary flex items-center gap-2">
+                      <CardTitle className="text-xl text-primary flex items-center gap-3">
                         <MapPin className="h-5 w-5" />
+                        <span className="text-2xl">{office.id === 'thailand' ? '🇹🇭' : '🇲🇾'}</span>
                         {office.country} Office
                       </CardTitle>
                     </CardHeader>
