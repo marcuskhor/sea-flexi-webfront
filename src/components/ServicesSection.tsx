@@ -13,14 +13,14 @@ const ServicesSection = () => {
     {
       icon: Ship,
       title: "Ocean Freight",
-      description: "Comprehensive sea freight solutions with FCL and LCL options. Our extensive global network ensures competitive rates and reliable transit times.",
-      features: ["Full Container Load (FCL)", "Less Container Load (LCL)", "Global shipping routes", "Port-to-port delivery"]
+      description: "Sea Flexi Group handles FCL and LCL services worldwide. We can support general cargo, dangerous cargo, frozen food and special cargo from origins to various countries. Especially Korea, China, Malaysia, Singapore, Indonesia, Taiwan, India, UAE, etc. We proudly offer you the best solutions based on your requirements. Also offer the competitive rates from core shipping line partners.",
+      features: ["Full Container Load (FCL)", "Less Container Load (LCL)", "General & dangerous cargo", "Frozen food & special cargo", "Korea, China, Malaysia, Singapore routes", "Competitive rates from core partners"]
     },
     {
       icon: Package,
       title: "Flexibag & Installation",
-      description: "Specialized flexibag solutions for bulk liquid transportation with professional installation services for safe container transport.",
-      features: ["Professional installation", "Bulk liquid transport", "Container optimization", "Safety compliance"]
+      description: "Sea Flexi Group offers Flexi Tank for your liquid goods. We are one of the market that have team installing flexi bag inside container.",
+      features: ["Professional installation team", "Flexi tank solutions", "Liquid goods transport", "Market-leading expertise"]
     },
     {
       icon: Package,
@@ -31,8 +31,8 @@ const ServicesSection = () => {
     {
       icon: Truck,
       title: "Crossborder Trucking",
-      description: "Efficient cross-border trucking solutions connecting different countries with customs handling and timely delivery across borders.",
-      features: ["International border crossings", "Customs clearance", "Documentation handling", "Route optimization"]
+      description: "Sea Flexi Group offers international door-to-door service by long haul trucking from Thailand to Malaysia, Singapore, Laos, Myanmar, Cambodia, Vietnam, and China.",
+      features: ["Thailand to ASEAN countries", "Door-to-door service", "Long haul trucking", "Coverage: Malaysia, Singapore, Laos, Myanmar, Cambodia, Vietnam, China"]
     }
   ];
 

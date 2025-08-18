@@ -136,8 +136,10 @@ const Services = () => {
                   <h2 className="text-3xl sm:text-4xl font-bold text-primary">Ocean Freight</h2>
                 </div>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Comprehensive sea freight solutions with FCL and LCL options. Our extensive global 
-                  network ensures competitive rates and reliable transit times across all major shipping routes worldwide.
+                  Sea Flexi Group handles FCL and LCL services worldwide. We can support general cargo, dangerous 
+                  cargo, frozen food and special cargo from origins to various countries. Especially Korea, China, Malaysia, Singapore,
+                  Indonesia, Taiwan, India, UAE, etc. We proudly offer you the best solutions based on your requirements. Also offer the competitive rates
+                  from core shipping line partners.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center">
@@ -150,11 +152,19 @@ const Services = () => {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Global shipping routes</span>
+                    <span>General & dangerous cargo</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Port-to-port delivery</span>
+                    <span>Frozen food & special cargo</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Korea, China, Malaysia, Singapore routes</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <span>Competitive rates from core partners</span>
                   </div>
                 </div>
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -179,8 +189,8 @@ const Services = () => {
                 <h2 className="text-3xl sm:text-4xl font-bold text-primary">Flexibag & Installation</h2>
               </div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Specialized flexibag solutions for bulk liquid transportation. We provide professional 
-                installation services and ensure safe, efficient transport of non-hazardous liquids in standard containers.
+                Sea Flexi Group offers Flexi Tank for your liquid goods. 
+                We are one of the market that have team installing flexi bag inside container.
               </p>
             </div>
             
@@ -361,25 +371,25 @@ const Services = () => {
                   <h2 className="text-3xl sm:text-4xl font-bold text-primary">Crossborder Trucking</h2>
                 </div>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Efficient cross-border trucking solutions connecting different countries and regions. 
-                  We handle customs procedures, documentation, and ensure timely delivery across international borders.
+                  Sea Flexi Group offers international door-to-door service by long haul trucking from Thailand to
+                  Malaysia, Singapore, Laos, Myanmar, Cambodia, Vietnam, and China.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>International border crossings</span>
+                    <span>Thailand to ASEAN countries</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Customs clearance</span>
+                    <span>Door-to-door service</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Documentation handling</span>
+                    <span>Long haul trucking</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Route optimization</span>
+                    <span>Malaysia, Singapore, Laos, Myanmar, Cambodia, Vietnam, China</span>
                   </div>
                 </div>
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
