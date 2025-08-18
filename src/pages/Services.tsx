@@ -145,7 +145,7 @@ const Services = () => {
                   <Phone className="mr-2 h-4 w-4" />
                   Call Now: +1 (555) 123-4567
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+                <Button size="lg" variant="outline" className="border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary shadow-lg hover:shadow-xl transition-all duration-300">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Us
                 </Button>
