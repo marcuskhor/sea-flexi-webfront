@@ -1,44 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Ship, Plane, Truck, Package, FileCheck, Warehouse, ArrowRight } from "lucide-react";
+import { Ship, Truck, Package, ArrowRight } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
+      icon: Truck,
+      title: "Door to Door Service (B2B)",
+      description: "Complete end-to-end logistics solutions tailored for business-to-business operations. We handle your cargo from pickup to final delivery.",
+      features: ["Complete supply chain management", "B2B focused solutions", "Real-time tracking", "Dedicated account management"]
+    },
+    {
       icon: Ship,
       title: "Ocean Freight",
-      description: "Comprehensive sea freight solutions with FCL and LCL options. Our extensive network ensures competitive rates and reliable transit times across all major shipping routes.",
-      features: ["Full Container Load (FCL)", "Less Container Load (LCL)", "Global routing options", "Port-to-port delivery"]
-    },
-    {
-      icon: Plane,
-      title: "Air Freight",
-      description: "Fast and reliable air cargo services for time-sensitive shipments. We offer door-to-door delivery with real-time tracking and express handling options.",
-      features: ["Express delivery", "Standard air freight", "Dangerous goods handling", "Temperature controlled"]
-    },
-    {
-      icon: Truck,
-      title: "Ground Transportation",
-      description: "Efficient trucking and inland transportation services connecting ports, airports, and final destinations with flexible scheduling and route optimization.",
-      features: ["Local delivery", "Long-haul trucking", "Cross-border transport", "Last-mile delivery"]
-    },
-    {
-      icon: FileCheck,
-      title: "Customs Clearance",
-      description: "Expert customs brokerage services to ensure smooth clearance of your goods. Our specialists handle documentation, compliance, and duty optimization.",
-      features: ["Import/export clearance", "Duty optimization", "Compliance management", "Documentation support"]
-    },
-    {
-      icon: Warehouse,
-      title: "Warehousing & Distribution",
-      description: "Secure storage and distribution facilities with inventory management, order fulfillment, and value-added services tailored to your needs.",
-      features: ["Inventory management", "Order fulfillment", "Pick & pack services", "Cross-docking"]
+      description: "Comprehensive sea freight solutions with FCL and LCL options. Our extensive global network ensures competitive rates and reliable transit times.",
+      features: ["Full Container Load (FCL)", "Less Container Load (LCL)", "Global shipping routes", "Port-to-port delivery"]
     },
     {
       icon: Package,
-      title: "Supply Chain Management",
-      description: "End-to-end supply chain optimization with advanced analytics, demand forecasting, and integrated logistics solutions for maximum efficiency.",
-      features: ["Supply chain design", "Demand forecasting", "Vendor management", "Performance analytics"]
+      title: "Flexibag & Installation",
+      description: "Specialized flexibag solutions for bulk liquid transportation with professional installation services for safe container transport.",
+      features: ["Professional installation", "Bulk liquid transport", "Container optimization", "Safety compliance"]
+    },
+    {
+      icon: Package,
+      title: "LCL (Malaysia)",
+      description: "Less than Container Load services specifically designed for Malaysian market with cost-effective consolidation and regular schedules.",
+      features: ["Malaysian market expertise", "Regular sailing schedules", "Cost-effective consolidation", "Local customs knowledge"]
+    },
+    {
+      icon: Truck,
+      title: "Crossborder Trucking",
+      description: "Efficient cross-border trucking solutions connecting different countries with customs handling and timely delivery across borders.",
+      features: ["International border crossings", "Customs clearance", "Documentation handling", "Route optimization"]
     }
   ];
 
@@ -82,7 +76,7 @@ const ServicesSection = () => {
                     ))}
                   </ul>
                   <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300">
-                    Learn More
+                    View Details
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>

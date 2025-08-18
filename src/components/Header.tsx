@@ -7,11 +7,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Why Choose Us", href: "#why-choose-us" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Services", href: "/services" },
+    { name: "Why Choose Us", href: "/#why-choose-us" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -20,12 +20,17 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2 min-w-0 flex-shrink-0">
+<<<<<<< HEAD
             <img 
               src={seaflexi_logo} 
               alt="Sea Flexi Logistics" 
               className="h-6 w-6 sm:h-14 sm:w-14 text-primary flex-shrink-0"
             />
             <span className="text-2xl font-bold text-primary truncate">Sea Flexi</span>
+=======
+            <Ship className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+            <span className="text-lg sm:text-2xl font-bold text-primary truncate">Sea Flexi</span>
+>>>>>>> 4b9bc41df41162520c7a02680793fd14ef4c0e0c
           </div>
 
           {/* Desktop Navigation */}
