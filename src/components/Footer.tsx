@@ -7,19 +7,18 @@ const Footer = () => {
     {
       title: "Services",
       links: [
-        { name: "Ocean Freight", href: "#services" },
-        { name: "Air Freight", href: "#services" },
-        { name: "Ground Transportation", href: "#services" },
-        { name: "Customs Clearance", href: "#services" },
-        { name: "Warehousing", href: "#services" },
-        { name: "Supply Chain Management", href: "#services" }
+        { name: "Door to Door Service (B2B)", href: "/services" },
+        { name: "Ocean Freight", href: "/services" },
+        { name: "Flexibag & Installation", href: "/services" },
+        { name: "LCL (Malaysia)", href: "/services" },
+        { name: "Crossborder Trucking", href: "/services" }
       ]
     },
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "#about" },
-        { name: "Why Choose Us", href: "#why-choose-us" },
+        { name: "About Us", href: "/#about" },
+        { name: "Why Choose Us", href: "/#why-choose-us" },
         { name: "Careers", href: "#" },
         { name: "News & Updates", href: "#" },
         { name: "Case Studies", href: "#" },
@@ -29,7 +28,7 @@ const Footer = () => {
     {
       title: "Support",
       links: [
-        { name: "Contact Us", href: "#contact" },
+        { name: "Contact Us", href: "/#contact" },
         { name: "Track Shipment", href: "#" },
         { name: "Customer Portal", href: "#" },
         { name: "Documentation", href: "#" },
