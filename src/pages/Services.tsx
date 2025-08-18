@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
 import flexibagCertificate from "@/assets/flexibag-certificate.jpg";
+import isoCertificate from "@/assets/iso-certificate.jpg";
 
 const Services = () => {
   return (
@@ -213,19 +214,33 @@ const Services = () => {
                 </Button>
               </div>
               
-              {/* Certificate Display */}
+              {/* Certificates Display */}
               <div className="bg-white border border-primary/20 rounded-2xl p-8 text-center shadow-lg">
                 <Award className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-primary mb-4">Our Certification</h3>
-                <div className="bg-muted/20 rounded-lg p-4 mb-4">
-                  <img 
-                    src={flexibagCertificate} 
-                    alt="Flexibag Installation Certificate" 
-                    className="w-full h-auto rounded-lg shadow-md"
-                  />
+                <h3 className="text-xl font-bold text-primary mb-6">Our Certifications</h3>
+                
+                <div className="grid gap-6">
+                  <div className="bg-muted/20 rounded-lg p-4">
+                    <h4 className="font-semibold text-primary mb-2 text-sm">Flexibag Installation Certificate</h4>
+                    <img 
+                      src={flexibagCertificate} 
+                      alt="Flexibag Installation Certificate" 
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                  
+                  <div className="bg-muted/20 rounded-lg p-4">
+                    <h4 className="font-semibold text-primary mb-2 text-sm">ISO Quality Management Certificate</h4>
+                    <img 
+                      src={isoCertificate} 
+                      alt="ISO Quality Management Certificate" 
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  Certified professionals ensuring safe and compliant flexibag installations
+                
+                <p className="text-sm text-muted-foreground mt-4">
+                  Certified professionals ensuring safe, compliant, and quality-assured flexibag installations
                 </p>
               </div>
             </div>
