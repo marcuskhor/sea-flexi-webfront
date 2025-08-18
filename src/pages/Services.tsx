@@ -3,8 +3,8 @@ import { Ship, Truck, Package, MapPin, Droplets, ArrowRight, Phone, Mail, CheckC
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
-import flexibagCertificate from "@/assets/flexibag-certificate.jpg";
-import isoCertificate from "@/assets/iso-certificate.jpg";
+import cert1 from "@/assets/cert1.png";
+import cert2 from "@/assets/cert2.png";
 
 const Services = () => {
   return (
@@ -221,19 +221,19 @@ const Services = () => {
                 
                 <div className="grid gap-6">
                   <div className="bg-muted/20 rounded-lg p-4">
-                    <h4 className="font-semibold text-primary mb-2 text-sm">Flexibag Installation Certificate</h4>
+                    <h4 className="font-semibold text-primary mb-2 text-sm">The Container Owners Association in 2022</h4>
                     <img 
-                      src={flexibagCertificate} 
-                      alt="Flexibag Installation Certificate" 
+                      src={cert1} 
+                      alt="The Container Owners Association in 2022" 
                       className="w-full h-auto rounded-lg shadow-md"
                     />
                   </div>
                   
                   <div className="bg-muted/20 rounded-lg p-4">
-                    <h4 className="font-semibold text-primary mb-2 text-sm">ISO Quality Management Certificate</h4>
+                    <h4 className="font-semibold text-primary mb-2 text-sm">The Container Owners Association in 2023</h4>
                     <img 
-                      src={isoCertificate} 
-                      alt="ISO Quality Management Certificate" 
+                      src={cert2} 
+                      alt="The Container Owners Association in 2023" 
                       className="w-full h-auto rounded-lg shadow-md"
                     />
                   </div>
