@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Ship, Truck, Package, MapPin, Droplets, ArrowRight, Phone, Mail, CheckCircle, Award, Upload } from "lucide-react";
+import { Ship, Truck, Package, MapPin, Droplets, ArrowRight, Phone, Mail, CheckCircle, Award } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
+import flexibagCertificate from "@/assets/flexibag-certificate.jpg";
 
 const Services = () => {
   return (
@@ -212,25 +213,19 @@ const Services = () => {
                 </Button>
               </div>
               
-              {/* Certificate Upload Area */}
-              <div className="bg-white border-2 border-dashed border-primary/30 rounded-2xl p-8 text-center">
+              {/* Certificate Display */}
+              <div className="bg-white border border-primary/20 rounded-2xl p-8 text-center shadow-lg">
                 <Award className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-primary mb-4">Our Certification</h3>
-                <div className="bg-muted/50 rounded-lg p-6 mb-4 min-h-[200px] flex items-center justify-center">
-                  <div className="text-center">
-                    <Upload className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-sm text-muted-foreground mb-2">Certificate Image</p>
-                    <p className="text-xs text-muted-foreground">
-                      Upload your flexibag certification here
-                    </p>
-                  </div>
+                <div className="bg-muted/20 rounded-lg p-4 mb-4">
+                  <img 
+                    src={flexibagCertificate} 
+                    alt="Flexibag Installation Certificate" 
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
                 </div>
-                <Button variant="outline" className="w-full">
-                  <Upload className="mr-2 h-4 w-4" />
-                  Upload Certificate
-                </Button>
-                <p className="text-xs text-muted-foreground mt-2">
-                  Supported formats: JPG, PNG, PDF
+                <p className="text-sm text-muted-foreground">
+                  Certified professionals ensuring safe and compliant flexibag installations
                 </p>
               </div>
             </div>
