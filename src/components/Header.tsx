@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Ship, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import seaflexi_logo from "@/assets/seaflexi_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,9 +19,13 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Ship className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-primary">Sea Flexi</span>
+          <div className="flex items-center space-x-2 min-w-0 flex-shrink-0">
+            <img 
+              src={seaflexi_logo} 
+              alt="Sea Flexi Logistics" 
+              className="h-6 w-6 sm:h-14 sm:w-14 text-primary flex-shrink-0"
+            />
+            <span className="text-2xl font-bold text-primary truncate">Sea Flexi</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -40,7 +45,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+60 11112 22211</span>
             </div>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Get Quote

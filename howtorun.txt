@@ -1,0 +1,2 @@
+cd C:\Users\User\OneDrive\Desktop\sea_flexi\sea-flexi-webfront
+npm run dev
