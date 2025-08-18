@@ -198,22 +198,22 @@ const Services = () => {
               <div className="lg:col-span-2">
                 <div className="grid sm:grid-cols-2 gap-6 mb-8">
                   <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
-                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <CheckCircle className="h-5 w-5 text-accent mb-4" />
                     <h3 className="font-semibold text-primary mb-2">Professional Installation</h3>
                     <p className="text-sm text-muted-foreground">Expert installation by certified technicians</p>
                   </div>
                   <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
-                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <CheckCircle className="h-5 w-5 text-accent mb-4" />
                     <h3 className="font-semibold text-primary mb-2">Bulk Liquid Transport</h3>
                     <p className="text-sm text-muted-foreground">Safe transport of various non-hazardous liquids</p>
                   </div>
                   <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
-                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <CheckCircle className="h-5 w-5 text-accent mb-4" />
                     <h3 className="font-semibold text-primary mb-2">Container Optimization</h3>
                     <p className="text-sm text-muted-foreground">Maximum container utilization and efficiency</p>
                   </div>
                   <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6">
-                    <CheckCircle className="h-8 w-8 text-accent mb-4" />
+                    <CheckCircle className="h-5 w-5 text-accent mb-4" />
                     <h3 className="font-semibold text-primary mb-2">Safety Compliance</h3>
                     <p className="text-sm text-muted-foreground">Full compliance with international safety standards</p>
                   </div>
@@ -416,7 +416,7 @@ const Services = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
                 <Phone className="mr-2 h-4 w-4" />
-                Call Now: +1 (555) 123-4567
+                Call Now: +6012-420 2065
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary shadow-lg hover:shadow-xl transition-all duration-300">
                 <Mail className="mr-2 h-4 w-4" />
