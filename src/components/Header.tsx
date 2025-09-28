@@ -1,10 +1,35 @@
 import { useState } from "react";
 import { Menu, X, Ship, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useNavigate } from "react-router-dom";
 import seaflexi_logo from "@/assets/seaflexi_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('/#')) {
+      // Handle hash navigation on home page
+      if (window.location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.querySelector(href.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector(href.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      navigate(href);
+    }
+    setIsMenuOpen(false);
+  };
 
   const navigationItems = [
     { name: "Home", href: "/" },
@@ -31,13 +56,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200"
+                onClick={() => handleNavigation(item.href)}
+                className="text-foreground hover:text-accent transition-colors duration-200 cursor-pointer"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -66,14 +91,13 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-3">
               {navigationItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="px-3 py-2 text-foreground hover:text-accent transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleNavigation(item.href)}
+                  className="px-3 py-2 text-foreground hover:text-accent transition-colors duration-200 text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
               <div className="px-3 py-2 border-t border-border mt-3 pt-3">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
