@@ -24,9 +24,9 @@ const ServicesSection = () => {
     },
     {
       icon: Package,
-      title: "LCL (Malaysia)",
-      description: "Less than Container Load services specifically designed for Malaysian market with cost-effective consolidation and regular schedules.",
-      features: ["Malaysian market expertise", "Regular sailing schedules", "Cost-effective consolidation", "Local customs knowledge"]
+      title: "LCL (International)",
+      description: "Less than Container Load services for worldwide destinations with cost-effective consolidation and regular schedules to major international ports.",
+      features: ["Global coverage", "Regular sailing schedules", "Cost-effective consolidation", "International customs expertise"]
     },
     {
       icon: Truck,

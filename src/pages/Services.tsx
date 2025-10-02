@@ -258,7 +258,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* LCL Malaysia Section */}
+      {/* LCL International Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -268,16 +268,16 @@ const Services = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
                     <Package className="h-8 w-8 text-primary" />
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">LCL (Malaysia)</h2>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-primary">LCL (International)</h2>
                 </div>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Less than Container Load services specifically designed for Malaysian market. 
-                  Cost-effective consolidation services for smaller shipments with regular sailing schedules and competitive rates.
+                  Less than Container Load services for worldwide destinations. 
+                  Cost-effective consolidation services for smaller shipments with regular sailing schedules to major international ports and competitive rates.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Malaysian market expertise</span>
+                    <span>Global coverage</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
@@ -289,16 +289,16 @@ const Services = () => {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
-                    <span>Local customs knowledge</span>
+                    <span>International customs expertise</span>
                   </div>
                 </div>
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  Malaysia LCL Quote
+                  Get International LCL Quote
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
               <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-primary mb-6 text-center">Malaysia Advantages</h3>
+                <h3 className="text-2xl font-bold text-primary mb-6 text-center">International Advantages</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 mt-1">

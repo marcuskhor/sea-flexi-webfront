@@ -10,7 +10,7 @@ const Footer = () => {
         { name: "Door to Door Service (B2B)", href: "/services" },
         { name: "Ocean Freight", href: "/services" },
         { name: "Flexibag & Installation", href: "/services" },
-        { name: "LCL (Malaysia)", href: "/services" },
+        { name: "LCL (International)", href: "/services" },
         { name: "Crossborder Trucking", href: "/services" }
       ]
     },
