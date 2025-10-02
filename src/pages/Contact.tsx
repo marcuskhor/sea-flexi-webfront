@@ -26,9 +26,13 @@ const Contact = () => {
       id: "thailand",
       country: "Thailand",
       company: "SEA FLEXI LOGISTICS Co., Ltd.",
-      address: "116/53 SSP Tower II, Na Ranong Rd., Klong toey, Bangkok 10110, Thailand",
+      address: "116/53 SSP Tower 2, Naranong Rd., Klongtoey, Klongtoey, Bangkok 10110, Thailand",
       email: "yarincha@seaflexi.com",
-      phone: "064-895-6326",
+      phone: "+66-81-146-9595",
+      secondaryPhone: "064-895-6826",
+      contactPerson: "YARINCHA CHAROENPHANICH",
+      contactTitle: "Business Development Executive",
+      taxId: "0105565024128",
       hours: "Monday - Friday: 8:00 AM - 6:00 PM"
     },
     {
@@ -113,11 +117,24 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">{office.company}</h4>
                         <p className="text-muted-foreground text-sm leading-relaxed">{office.address}</p>
+                        {office.taxId && (
+                          <p className="text-muted-foreground text-xs mt-1">Tax ID: {office.taxId}</p>
+                        )}
                       </div>
+                      
+                      {office.contactPerson && (
+                        <>
+                          <Separator />
+                          <div>
+                            <h5 className="text-sm font-semibold text-foreground">{office.contactPerson}</h5>
+                            <p className="text-xs text-muted-foreground">{office.contactTitle}</p>
+                          </div>
+                        </>
+                      )}
                       
                       <Separator />
                       
-                      <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="space-y-3">
                         <div className="flex items-center gap-2">
                           <Mail className="h-4 w-4 text-primary" />
                           <a href={`mailto:${office.email}`} className="text-primary hover:underline text-sm">
@@ -130,6 +147,14 @@ const Contact = () => {
                             {office.phone}
                           </a>
                         </div>
+                        {office.secondaryPhone && (
+                          <div className="flex items-center gap-2 ml-6">
+                            <Phone className="h-3 w-3 text-primary" />
+                            <a href={`tel:${office.secondaryPhone}`} className="text-primary hover:underline text-xs">
+                              {office.secondaryPhone} (Alt)
+                            </a>
+                          </div>
+                        )}
                       </div>
                       
                       <div className="flex items-center gap-2">
