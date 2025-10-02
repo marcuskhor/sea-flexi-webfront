@@ -20,23 +20,28 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Malaysia Headquarters",
-      details: ["T03, Common Ground, Level 2", "Moulmein Rise Shoppes, 9, Jalan Moulmein", "Pulau Tikus, 10350 George Town, Pulau Pinang, Malaysia"]
+      title: "🇹🇭 Thailand Office",
+      details: ["SEA FLEXI LOGISTICS CO., LTD.", "116/53 SSP Tower 2, Naranong Rd.", "Klongtoey, Bangkok 10110, Thailand", "Tax ID: 0105565024128"]
+    },
+    {
+      icon: MapPin,
+      title: "🇲🇾 Malaysia Office",
+      details: ["SEA FLEXI LOGISTICS Sdn Bhd", "T03, Common Ground, Level 2", "Moulmein Rise Shoppes, 9, Jalan Moulmein", "Pulau Tikus, 10350 George Town, Pulau Pinang"]
     },
     {
       icon: Phone,
       title: "Contact Numbers",
-      details: ["+6012-420 2065", "24/7 Emergency: +6012-420 2065"]
+      details: ["Thailand: +66-81-146-9595", "Thailand Alt: 064-895-6826", "Malaysia: +6012-420 2065"]
     },
     {
       icon: Mail,
       title: "Email Addresses",
-      details: ["Jessicalee@seaflexi.com", "info@seaflexi.com"]
+      details: ["Thailand: yarincha@seaflexi.com", "Malaysia: Jessicalee@seaflexi.com"]
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 5:00 PM MYT", "Saturday: 9:00 AM - 1:00 PM MYT", "24/7 Emergency Support Available"]
+      details: ["Thailand: Mon-Fri 8:00 AM - 6:00 PM", "Malaysia: Mon-Fri 9:00 AM - 5:00 PM", "24/7 Emergency Support Available"]
     }
   ];
 
@@ -119,7 +124,7 @@ const ContactSection = () => {
                   </p>
                   <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
                     <Phone className="h-4 w-4 mr-2" />
-                    Call Now: +6012-420 2065
+                    Call TH: +66-81-146-9595
                   </Button>
                 </CardContent>
               </Card>
