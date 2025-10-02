@@ -44,19 +44,19 @@ const WhyChooseUsSection = () => {
   const testimonials = [
     {
       quote: "Sea Flexi transformed our supply chain operations. Their technology platform gives us complete visibility and control over our shipments.",
-      author: "Sarah Johnson",
+      author: "Somchai Wongwiwat",
       role: "Supply Chain Director",
       company: "TechCorp Global"
     },
     {
       quote: "The reliability and customer service are exceptional. We've reduced our shipping costs by 25% while improving delivery times.",
-      author: "Michael Chen",
+      author: "Lee Wei Chen",
       role: "Logistics Manager",
       company: "Global Retail Inc"
     },
     {
       quote: "Their expertise in customs clearance has eliminated delays and compliance issues. Highly recommend for international shipping.",
-      author: "Emma Rodriguez",
+      author: "Apinya Srisawat",
       role: "Import/Export Specialist",
       company: "Manufacturing Plus"
     }
