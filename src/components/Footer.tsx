@@ -17,8 +17,8 @@ const Footer = () => {
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "/#about" },
-        { name: "Why Choose Us", href: "/#why-choose-us" },
+        { name: "About Us", href: "/about" },
+        { name: "Why Choose Us", href: "/why-choose-us" },
         { name: "Careers", href: "#" },
         { name: "News & Updates", href: "#" },
         { name: "Case Studies", href: "#" },
@@ -28,7 +28,7 @@ const Footer = () => {
     {
       title: "Support",
       links: [
-        { name: "Contact Us", href: "/#contact" },
+        { name: "Contact Us", href: "/contact" },
         { name: "Track Shipment", href: "#" },
         { name: "Customer Portal", href: "#" },
         { name: "Documentation", href: "#" },
