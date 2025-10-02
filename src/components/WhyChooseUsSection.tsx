@@ -143,7 +143,7 @@ const WhyChooseUsSection = () => {
               <div className="text-sm text-muted-foreground">Shipments Delivered</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">
-              <div className="text-3xl font-bold text-accent mb-2">1,200+</div>
+              <div className="text-3xl font-bold text-accent mb-2">100+</div>
               <div className="text-sm text-muted-foreground">Happy Clients</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">
@@ -151,8 +151,8 @@ const WhyChooseUsSection = () => {
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">
-              <div className="text-3xl font-bold text-accent mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Global Offices</div>
+              <div className="text-3xl font-bold text-accent mb-2">2</div>
+              <div className="text-sm text-muted-foreground">Offices</div>
             </div>
           </div>
         </div>
