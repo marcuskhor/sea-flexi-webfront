@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
     {
       icon: Award,
       title: "Industry Expertise",
-      description: "15+ years of experience handling diverse cargo types and complex supply chain requirements across Southeast Asia."
+      description: "2+ years of experience handling diverse cargo types and complex supply chain requirements across Southeast Asia."
     },
     {
       icon: HeadphonesIcon,
@@ -309,15 +309,15 @@ const WhyChooseUs = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="bg-card rounded-xl p-6 border border-accent/20 hover:shadow-lg transition-shadow duration-300">
-                <div className="text-3xl font-bold text-accent mb-2">500K+</div>
-                <div className="text-sm text-muted-foreground">Shipments Delivered</div>
+                <div className="text-3xl font-bold text-accent mb-2">10K+</div>
+                <div className="text-sm text-muted-foreground">TEUs Handled & Growing</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-accent/20 hover:shadow-lg transition-shadow duration-300">
                 <div className="text-3xl font-bold text-accent mb-2">100+</div>
                 <div className="text-sm text-muted-foreground">Happy Clients</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-accent/20 hover:shadow-lg transition-shadow duration-300">
-                <div className="text-3xl font-bold text-accent mb-2">15+</div>
+                <div className="text-3xl font-bold text-accent mb-2">2+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-accent/20 hover:shadow-lg transition-shadow duration-300">

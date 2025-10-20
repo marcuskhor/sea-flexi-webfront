@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Menu, X, Ship, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
-import seaflexi_logo from "@/assets/seaflexi_logo.png";
+import seaflexi_logo from "@/assets/sea_flexi_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,9 +48,8 @@ const Header = () => {
             <img 
               src={seaflexi_logo} 
               alt="Sea Flexi Logistics" 
-              className="h-6 w-6 sm:h-14 sm:w-14 text-primary flex-shrink-0"
+              className="h-10 w-auto sm:h-12 flex-shrink-0"
             />
-            <span className="text-2xl font-bold text-primary truncate">Sea Flexi</span>
           </div>
 
           {/* Desktop Navigation */}

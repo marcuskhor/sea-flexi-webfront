@@ -139,15 +139,15 @@ const WhyChooseUsSection = () => {
           {/* Statistics */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="bg-card rounded-xl p-6 border border-accent/20">
-              <div className="text-3xl font-bold text-accent mb-2">500K+</div>
-              <div className="text-sm text-muted-foreground">Shipments Delivered</div>
+              <div className="text-3xl font-bold text-accent mb-2">10K+</div>
+              <div className="text-sm text-muted-foreground">TEUs Handled & Growing</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">
               <div className="text-3xl font-bold text-accent mb-2">100+</div>
               <div className="text-sm text-muted-foreground">Happy Clients</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">
-              <div className="text-3xl font-bold text-accent mb-2">15+</div>
+              <div className="text-3xl font-bold text-accent mb-2">2+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-accent/20">

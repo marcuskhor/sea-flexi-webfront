@@ -11,7 +11,7 @@ const AboutSection = () => {
     {
       icon: Award,
       title: "Industry Leader",
-      description: "Over 15 years of excellence in international shipping and logistics with industry-leading certifications."
+      description: "2+ years of excellence in international shipping and logistics with industry-leading certifications."
     },
     {
       icon: Globe,
@@ -59,12 +59,12 @@ const AboutSection = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-card rounded-lg border border-accent/20">
-                  <div className="text-2xl font-bold text-accent mb-2">15+</div>
+                  <div className="text-2xl font-bold text-accent mb-2">2+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg border border-accent/20">
-                  <div className="text-2xl font-bold text-accent mb-2">10M+</div>
-                  <div className="text-sm text-muted-foreground">TEU Handled</div>
+                  <div className="text-2xl font-bold text-accent mb-2">10K+</div>
+                  <div className="text-sm text-muted-foreground">TEUs Handled & Growing</div>
                 </div>
               </div>
             </div>

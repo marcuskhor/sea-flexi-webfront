@@ -1,4 +1,5 @@
-import { Ship, MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import seaflexi_logo from "@/assets/sea_flexi_logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -64,8 +65,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <Ship className="h-8 w-8 text-accent" />
-              <span className="text-2xl font-bold">Sea Flexi</span>
+              <img 
+                src={seaflexi_logo} 
+                alt="Sea Flexi Logistics" 
+                className="h-12 w-auto"
+              />
             </div>
             
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
@@ -78,7 +82,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  T03, Common Ground, Level 2, Moulmein Rise Shoppes, 9, Jalan Moulmein, Pulau Tikus, 10350 George Town, Pulau Pinang, Malaysia
+                  Sea Flexi Logistics Sdn Bhd Suite 15.08, 15th Floor, MWE Plaza No 8 Lebuh Farquhar 10200 Penang
                 </span>
               </div>
               <div className="flex items-center space-x-3">

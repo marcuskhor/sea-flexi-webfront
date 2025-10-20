@@ -122,7 +122,7 @@ const Services = () => {
                       <div className="text-sm text-muted-foreground">Tracking Support</div>
                     </div>
                     <div className="bg-white rounded-lg p-4">
-                      <div className="text-2xl font-bold text-accent">15+</div>
+                      <div className="text-2xl font-bold text-accent">2+</div>
                       <div className="text-sm text-muted-foreground">Years Experience</div>
                     </div>
                   </div>

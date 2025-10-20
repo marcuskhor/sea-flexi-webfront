@@ -26,7 +26,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "🇲🇾 Malaysia Office",
-      details: ["SEA FLEXI LOGISTICS Sdn Bhd", "T03, Common Ground, Level 2", "Moulmein Rise Shoppes, 9, Jalan Moulmein", "Pulau Tikus, 10350 George Town, Pulau Pinang"]
+      details: ["SEA FLEXI LOGISTICS Sdn Bhd", "Suite 15.08, 15th Floor, MWE Plaza", "No 8 Lebuh Farquhar", "10200 Penang"]
     },
     {
       icon: Phone,
@@ -41,7 +41,7 @@ const ContactSection = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Thailand: Mon-Fri 8:00 AM - 6:00 PM", "Malaysia: Mon-Fri 9:00 AM - 5:00 PM", "24/7 Emergency Support Available"]
+      details: ["Thailand: Mon-Fri 8:00 AM - 6:00 PM", "Malaysia: Mon-Fri 9:00 AM - 6:00 PM", "24/7 Emergency Support Available"]
     }
   ];
 
