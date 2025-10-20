@@ -169,18 +169,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Additional Legal Links */}
-          <div className="mt-4 pt-4 border-t border-primary-foreground/10">
-            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-primary-foreground/60">
-              <span>ISO 9001:2015 Certified</span>
-              <span>•</span>
-              <span>IATA & FIATA Member</span>
-              <span>•</span>
-              <span>Customs-Trade Partnership Against Terrorism (C-TPAT)</span>
-              <span>•</span>
-              <span>Authorized Economic Operator (AEO)</span>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
