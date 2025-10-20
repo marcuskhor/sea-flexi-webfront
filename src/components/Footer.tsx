@@ -68,7 +68,8 @@ const Footer = () => {
               <img 
                 src={seaflexi_logo} 
                 alt="Sea Flexi Logistics" 
-                className="h-12 w-auto"
+                className="w-auto"
+                style={{ height: '8rem' }}
               />
             </div>
             

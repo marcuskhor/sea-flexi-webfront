@@ -48,7 +48,8 @@ const Header = () => {
             <img 
               src={seaflexi_logo} 
               alt="Sea Flexi Logistics" 
-              className="h-10 w-auto sm:h-12 flex-shrink-0"
+              className="h-20 w-auto flex-shrink-0"
+              style={{ height: '5rem' }}
             />
           </div>
 
