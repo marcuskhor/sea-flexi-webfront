@@ -77,7 +77,11 @@ const ServicesSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300">
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300"
+                    onClick={() => service.title === "Ocean Freight" ? navigate('/services/ocean-freight') : null}
+                  >
                     View Details
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

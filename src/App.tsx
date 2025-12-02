@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Contact from "./pages/Contact";
+import OceanFreight from "./pages/OceanFreight";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services/ocean-freight" element={<OceanFreight />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
