@@ -35,7 +35,7 @@ const Contact = () => {
       id: "malaysia",
       country: "Malaysia", 
       company: "SEA FLEXI LOGISTICS Sdn Bhd",
-      address: "Suite 15.08, 15th Floor, MWE Plaza No 8 Lebuh Farquhar 10200 Penang",
+      address: "Suite 15.08, 15th Floor, MWE Plaza No 8 Lebuh Farquhar 10200 George Town, Penang",
       email: "Jessicalee@seaflexi.com",
       phone: "+6012-420 2065",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM"

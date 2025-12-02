@@ -26,7 +26,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "🇲🇾 Malaysia Office",
-      details: ["SEA FLEXI LOGISTICS Sdn Bhd", "Suite 15.08, 15th Floor, MWE Plaza", "No 8 Lebuh Farquhar", "10200 Penang"]
+      details: ["SEA FLEXI LOGISTICS Sdn Bhd", "Suite 15.08, 15th Floor, MWE Plaza", "No 8 Lebuh Farquhar", "10200 George Town, Penang"]
     },
     {
       icon: Phone,

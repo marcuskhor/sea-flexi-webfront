@@ -83,7 +83,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  Sea Flexi Logistics Sdn Bhd Suite 15.08, 15th Floor, MWE Plaza No 8 Lebuh Farquhar 10200 Penang
+                  Sea Flexi Logistics Sdn Bhd Suite 15.08, 15th Floor, MWE Plaza No 8 Lebuh Farquhar 10200 George Town, Penang
                 </span>
               </div>
               <div className="flex items-center space-x-3">
